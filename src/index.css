@@ -1,0 +1,19 @@
+.dark {
+  --color-bg-primary: #141115;
+  --color-text-primary: #fb8b24;
+  --color-text-constrast: #c66e1b;
+  --color-border-primary: #fef9ff;
+  --color-bg-secondary: #4b5563;
+}
+
+.light {
+  --color-bg-primary: #f7f7f2;
+  --color-text-primary: #51355a;
+  --color-text-contrast: #4b3870;
+  --color-border-primary: #141115;
+  --color-bg-secondary: #d1d5db;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
