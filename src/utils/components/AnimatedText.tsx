@@ -10,8 +10,7 @@ function AnimatedText({ text }: Props) {
 
     return (
         <>
-            <div className='flex'>
-                <div className='flex'>
+            <div className='flex whitespace-pre'>
                     {characters.map((char, index) => (
                         <motion.div
                             key={index}
@@ -22,7 +21,6 @@ function AnimatedText({ text }: Props) {
                             {char}
                         </motion.div>
                     ))}
-                </div>
             </div>
 
         </>
