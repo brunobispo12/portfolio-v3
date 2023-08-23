@@ -1,15 +1,17 @@
-import { HeroSection } from "./components";
-import { Suspense } from 'react';
-import { useTranslation } from 'react-i18next';
+import { About, HeroSection } from "./components";
 
 function App() {
 
-  const { t, i18n } = useTranslation()
-
   return (
     <>
-      <div className="min-h-screen">
+      <div className="min-h-screen space-y-24">
         <HeroSection />
+        <div className="px-8 space-y-4">
+          <About />
+        </div>
+        <div className="min-h-screen">
+
+        </div>
       </div>
     </>
   )

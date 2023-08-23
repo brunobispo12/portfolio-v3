@@ -5,6 +5,7 @@ module.exports = {
       backgroundColor: {
         primary: 'var(--color-bg-primary)',
         secondary: 'var(--color-bg-secondary)',
+        bar: 'var(--color-bg-bar)',
       },
       textColor: {
         primary: 'var(--color-text-primary)',
@@ -12,6 +13,9 @@ module.exports = {
       },
       borderColor: {
         primary: 'var(--color-border-primary)',
+      },
+      colors: {
+        primary: 'var(--color-shadow-primary)',
       }
     },
   },

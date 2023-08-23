@@ -1,21 +1,27 @@
-import { useTranslation } from "react-i18next"
 import AnimatedText from "../../utils/components/AnimatedText"
 import Header from "../header/Header"
+import { BsArrowDown } from "react-icons/bs"
+import { motion } from "framer-motion"
 
 function HeroSection() {
 
-    const { t, i18n } = useTranslation()
-
     return (
         <>
-            <div className="h-screen flex flex-col">
+            <div className="h-screen flex flex-col relative">
                 <div className="h-[10vh]">
                     <Header />
                 </div>
                 <section className="flex flex-col justify-center items-center h-[80vh] space-y-2">
-                    <h1 className=" text-3xl md:text-4xl font-bold">{t('main.hero-title')}</h1>
-                    <h2 className="text-2xl font-bold"><AnimatedText text={t('main.hero-subtitle')} /></h2>
+                    <h1 className=" text-3xl md:text-4xl font-bold">Olá meu nome é Bruno</h1>
+                    <h2 className="text-2xl font-bold"><AnimatedText text='Desenvolvedor Web' /></h2>
                 </section>
+                <motion.div
+                    className="flex justify-center items-center relative"
+                    animate={{ translateY: [-30, 0, -30] }}
+                    transition={{ repeat: Infinity, ease: "easeInOut", duration: 1.5 }}
+                >
+                    <BsArrowDown size={35} />
+                </motion.div>
             </div>
         </>
 
