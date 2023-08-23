@@ -11,7 +11,7 @@ function Skills() {
                 transition={{ delay: 1 }}
                 viewport={{ once: true }}
             >
-                <h1 className='self-center font-bold text-lg'>Skills</h1>
+                <h1 className='self-center font-bold text-lg text-titleprimary'>Skills</h1>
                 <div className='flex gap-2'>
                     <SiReact size={32} />
                     <SiNestjs size={32} />
@@ -31,7 +31,7 @@ function Skills() {
                 transition={{ delay: 1 }}
                 viewport={{ once: true }}
             >
-                <h1 className='self-center font-bold text-lg'>Learning</h1>
+                <h1 className='self-center font-bold text-lg text-titleprimary'>Learning</h1>
                 <div className='flex gap-4'>
                     <SiRuby size={30} />
                     <SiRubyonrails size={45} />

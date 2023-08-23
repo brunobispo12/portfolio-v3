@@ -8,7 +8,7 @@ function About() {
             <div className='flex gap-24 h-56'>
                 <div className='self-center space-y-4 '>
                     <motion.h1
-                        className='font-bold text-3xl'
+                        className='font-bold text-3xl text-titleprimary'
                         initial={{ translateX: -30, opacity: 0 }}
                         whileInView={{ translateX: 0, opacity: 1 }}
                         transition={{ delay: 0.5, ease: 'easeIn' }}

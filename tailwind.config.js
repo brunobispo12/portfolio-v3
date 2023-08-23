@@ -9,7 +9,8 @@ module.exports = {
       },
       textColor: {
         primary: 'var(--color-text-primary)',
-        contrast: 'var(--color-text-contrast)',
+        titleprimary: 'var(--color-title-primary)',
+        titlecontrast: 'var(--color-title-contrast)',
       },
       borderColor: {
         primary: 'var(--color-border-primary)',

@@ -12,7 +12,7 @@ function ChangeThemeButton() {
     }
 
     return (
-        <div onClick={changeTheme} className="cursor-pointer w-28 h-7 border-2 border-primary rounded-2xl px-2 overflow-hidden relative flex justify-center items-center">
+        <div onClick={changeTheme} className="cursor-pointer w-28 h-7 border-2 border-primary rounded-2xl px-2 overflow-hidden relative flex justify-center items-center text-titleprimary">
             <BsFillSunFill size={18} className="z-20" />
             <motion.div
                 className="w-14 h-9 border-2 border-primary bg-secondary rounded-2xl relative z-10"

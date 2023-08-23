@@ -12,15 +12,15 @@ function HeroSection() {
                     <Header />
                 </div>
                 <section className="flex flex-col justify-center items-center h-[80vh] space-y-2">
-                    <h1 className=" text-3xl md:text-4xl font-bold">Olá meu nome é Bruno</h1>
-                    <h2 className="text-2xl font-bold"><AnimatedText text='Desenvolvedor Web' /></h2>
+                    <h1 className=" text-3xl md:text-4xl font-bold text-titleprimary">Olá meu nome é Bruno</h1>
+                    <h2 className="text-2xl font-bold text-titleprimary"><AnimatedText text='Desenvolvedor Web' /></h2>
                 </section>
                 <motion.div
                     className="flex justify-center items-center relative"
                     animate={{ translateY: [-30, 0, -30] }}
                     transition={{ repeat: Infinity, ease: "easeInOut", duration: 1.5 }}
                 >
-                    <BsArrowDown size={35} />
+                    <BsArrowDown size={35} className="text-titleprimary"/>
                 </motion.div>
             </div>
         </>
