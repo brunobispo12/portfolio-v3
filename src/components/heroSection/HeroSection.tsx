@@ -17,7 +17,7 @@ function HeroSection() {
                 </section>
                 <motion.div
                     className="flex justify-center items-center relative"
-                    animate={{ translateY: [-30, 0, -30] }}
+                    animate={{ translateY: [-30, 5, -30] }}
                     transition={{ repeat: Infinity, ease: "easeInOut", duration: 1.5 }}
                 >
                     <BsArrowDown size={35} className="text-titleprimary"/>
