@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 function Skills() {
     return (
-        <div className='flex gap-6'>
+        <div className='flex gap-5'>
             <motion.div className='flex flex-col space-y-3'
                 whileInView={{ x: 0, opacity: 1 }}
                 initial={{ x: -30, opacity: 0 }}
@@ -12,7 +12,7 @@ function Skills() {
                 viewport={{ once: true }}
             >
                 <h1 className='self-center font-bold text-lg text-titleprimary'>Skills</h1>
-                <div className='flex gap-2'>
+                <div className='flex gap-1'>
                     <SiReact size={32} />
                     <SiNestjs size={32} />
                     <SiMongodb size={32} />
