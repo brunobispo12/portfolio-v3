@@ -16,7 +16,7 @@ function HeroSection() {
                     <h2 className="text-2xl font-bold text-titleprimary"><AnimatedText text='Desenvolvedor Web' /></h2>
                 </section>
                 <motion.div
-                    className="flex justify-center items-center relative"
+                    className="flex justify-center items-center relative bottom-1"
                     animate={{ translateY: [-30, 5, -30] }}
                     transition={{ repeat: Infinity, ease: "easeInOut", duration: 1.5 }}
                 >
