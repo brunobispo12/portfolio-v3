@@ -17,6 +17,10 @@ module.exports = {
       },
       colors: {
         primary: 'var(--color-shadow-primary)',
+      },
+      gridTemplateColumns: {
+        about: 'repeat(2, minmax(0, 40rem))',
+        aboutMobile: 'repeat(1, minmax(0, 20rem))'
       }
     },
   },
