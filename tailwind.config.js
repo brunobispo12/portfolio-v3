@@ -14,6 +14,7 @@ module.exports = {
       },
       borderColor: {
         primary: 'var(--color-border-primary)',
+        secondary: 'var(--color-border-secondary)',
       },
       colors: {
         primary: 'var(--color-shadow-primary)',
