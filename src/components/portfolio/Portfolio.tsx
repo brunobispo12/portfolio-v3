@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
 import Project from './components/Project'
-import { Darth, ControleEstoque, DeluxeFleet } from '../../utils/constants/images'
+import { projects } from '../../utils/constants/projectsInfo'
 
 function Portfolio() {
     return (
-        <section className='md:px-20 space-y-16 md:space-y-16 md:space-x-16'>
+        <section className='md:px-16 space-y-16 md:space-y-16 md:space-x-16'>
             <motion.h1 className='text-3xl text-titleprimary font-bold'
                 initial={{ x: -45, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
@@ -19,9 +19,9 @@ function Portfolio() {
                 transition={{ delay: 1.2, ease: 'easeIn' }}
                 viewport={{ once: true }}
             >
-                <Project image={Darth} />
-                <Project image={ControleEstoque} />
-                <Project image={DeluxeFleet} />
+                {projects.map(project => {
+                    return <Project key={project.name} image={project.showcaseImage} project={project} />
+                })}
             </motion.div>
         </section>
     )
