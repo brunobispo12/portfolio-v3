@@ -3,10 +3,11 @@ import rentAcar from '../../../utils/images/rentacar.png'
 import { useEffect, useState } from 'react'
 import ViewMore from './viewMore'
 import ProjectModal from '../../project-modal/ProjectModal'
+import { ProjectInterface } from '../../../utils/types'
 
 interface ProjectProps {
   image: string
-  project: object
+  project: ProjectInterface
 }
 
 function Project({ image, project }: ProjectProps) {
@@ -23,7 +24,7 @@ function Project({ image, project }: ProjectProps) {
         <img src={image} alt="rentacar" className='h-full w-full' />
         <AnimatePresence>{viewDetails && <ViewMore setModal={setProjectModal} />}</AnimatePresence>
       </motion.div >
-      <AnimatePresence>{projectModal && <ProjectModal setModal={setProjectModal} />}</AnimatePresence>
+      <AnimatePresence>{projectModal && <ProjectModal setModal={setProjectModal} project={project}/>}</AnimatePresence>
     </>
   )
 }

@@ -9,6 +9,7 @@ module.exports = {
       },
       textColor: {
         primary: 'var(--color-text-primary)',
+        secondary: 'var(--color-text-secondary)',
         titleprimary: 'var(--color-title-primary)',
         titlecontrast: 'var(--color-title-contrast)',
       },

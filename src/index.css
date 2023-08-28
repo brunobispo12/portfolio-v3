@@ -1,6 +1,7 @@
 .dark {
   --color-bg-primary: #282B28;
   --color-text-primary: #EFF1F3;
+  --color-text-secondary: #141115;
   --color-title-primary: #fb8b24;
   --color-title-contrast: #c66e1b;
   --color-border-primary: #fef9ff;
@@ -13,6 +14,7 @@
 .light {
   --color-bg-primary: #f7f7f2;
   --color-text-primary: #141115;
+  --color-text-secondary: #EFF1F3;
   --color-title-primary: #51355a;
   --color-title-contrast: #4b3870;
   --color-border-primary: #141115;

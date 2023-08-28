@@ -11,7 +11,7 @@ function viewMore({ setModal }: ViewMoreProps) {
     const [arrow, setArrow] = useState<boolean>(false)
 
     return (
-        <motion.div className='text-titleprimary absolute top-0 bg-[#ffffff90] h-full w-full flex items-center justify-center'
+        <motion.div className='text-black absolute top-0 bg-[#ffffff90] h-full w-full flex items-center justify-center'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
