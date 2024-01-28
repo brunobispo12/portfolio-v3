@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import ViewMore from './viewMore'
 import ProjectModal from '../../project-modal/ProjectModal'
 import { ProjectInterface } from '../../../utils/types'
+import useProjectModal from '../../../hook/useProjectModal'
 
 interface ProjectProps {
   image: string
@@ -15,6 +16,8 @@ function Project({ image, project }: ProjectProps) {
   const [viewDetails, setViewDetails] = useState<boolean>(false)
   const [projectModal, setProjectModal] = useState<boolean>(false)
 
+  const { currentModalState, openModal } = useProjectModal()
+
   return (
     <>
       <motion.div className='border-2 border-secondary h-52 w-full rounded relative flex flex-col justify-center items-center'
@@ -24,7 +27,7 @@ function Project({ image, project }: ProjectProps) {
         <img src={image} alt="rentacar" className='h-full w-full' />
         <AnimatePresence>{viewDetails && <ViewMore setModal={setProjectModal} />}</AnimatePresence>
       </motion.div >
-      <AnimatePresence>{projectModal && <ProjectModal setModal={setProjectModal} project={project}/>}</AnimatePresence>
+      <AnimatePresence>{currentModalState && <ProjectModal setModal={openModal} project={project} />}</AnimatePresence>
     </>
   )
 }
